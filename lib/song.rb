@@ -26,7 +26,7 @@ class Song
 # def self.artist_count
 
 #     end
- end 
+ 
  
  attr_accessor :name, :artist, :genre, :artists
 
