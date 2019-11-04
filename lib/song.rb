@@ -23,9 +23,12 @@ class Song
    genre_count
  end 
  
-# def self.artist_count
-
-#     end
+ def self.artist_count
+  artist_count = Hash.new(0)
+  @@artists.each { |artist| artist_count[artist]+=1}
+  artist_count
+  
+  end
  
  
  attr_accessor :name, :artist, :genre, :artists
